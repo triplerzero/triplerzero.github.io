@@ -1,0 +1,78 @@
+/*公共样式*/
+body{
+    color:#666;
+    font-family: "微软雅黑";
+}
+a{
+    color:#666;
+}
+a:hover{
+    color:#666;
+    text-decoration: none;
+}
+.m_l{
+    margin-left:10px;
+}
+@font-face {
+    font-family: "wjs";
+    src:url("../fonts/MiFie-Web-Font.eot") format('embedded-opentype'),
+    url('../fonts/MiFie-Web-Font.svg') format('svg'),
+    url('../fonts/MiFie-Web-Font.ttf')  format('truetype'),
+    url('../fonts/MiFie-Web-Font.woff') format('woff')
+}
+/*字体图标*/
+.wjs_icon{
+    font-family: wjs;
+}
+.wjs_icon_phone::before{
+    content:"\e908";
+}
+.wjs_icon_tel::before{
+    content:"\e909";
+}
+.wjs_icon_logo::before{
+    content:"\e920";
+    font-size:50px;
+    color:#e92322;
+    vertical-align: middle;
+}
+.wjs_icon_word::before{
+    content:"\e93e";
+    font-size:36px;
+    vertical-align: middle;
+}
+
+/*字体图标*/
+/*头部开始*/
+.wjs_topBar{
+    border-bottom:1px solid #ccc;
+    margin-bottom:10px;
+}
+.wjs_topBar>.container>.row div+div{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-left:1px solid #ccc;
+}
+.wjs_topBar .wjs_app{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.wjs_topBar .wjs_app img{
+    display: none;
+}
+.wjs_topBar .wjs_app:hover img{
+    display: block;
+    position: absolute;
+    z-index:10;
+    top:40px;
+    left:50%;
+    margin-left:-60px;
+}
+.wjs_topBar .wjs_register{
+    background-color:#e92322;
+    border:1px solid #e92322;
+}
+/*头部结束*/
