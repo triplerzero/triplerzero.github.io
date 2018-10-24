@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/joke/joke",
+    "pages/index/link/link"
+  ],
+  "window": { 
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTextStyle": "#fff",
+    "navigationBarTitleText": "新闻头条",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar":{
+    "color": "#515151",
+    "selectedColor": "#1da0f2",
+    "backgroundColor": "#fff",
+    "borderStyle": "#fff",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"新闻",
+        "iconPath":"images/news.png",
+        "selectedIconPath":"images/news_sel.png"
+      },
+      {
+            "pagePath": "pages/joke/joke",
+            "text": "笑话",
+            "iconPath": "images/joke.png",
+            "selectedIconPath": "images/joke_sel.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+<view class='tab'>
+<view class='Toptab'>
+<view wx:for="{{datatype}}" wx:key="{{index}}" data-index="{{index}}" bindtap='tabTap' class="{{index==currentTapIndex?'active':''}}">{{item}}</view>
+</view>
+</view>
+<view >
+<view class="news" wx:for="{{newsData}}" wx:key="{{index}}">
+<view bindtap='newsTap' data-link="{{item.url}}">
+<view class='news_img'><image src='{{item.thumbnail_pic_s}}'></image></view>
+<view class='news_title'>{{item.title}}</view>
+<view class='news_date'>{{item.date}}</view>
+<view class='news_author'>{{item.author_name}}</view>
+</view>
+</view>
+</view>
+<image src="../../images/totop.png" class='totop' bindtap='totop' hidden='{{!floorstatus}}'></image>

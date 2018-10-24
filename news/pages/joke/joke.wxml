@@ -1,0 +1,10 @@
+<view class='tab'>
+<view class='Toptab'>
+<!-- <view wx:for="{{datatype}}" wx:key="{{index}}" data-index="{{index}}" bindtap='tabTap' class="{{index==currentTapIndex?'active':''}}">{{item}}</view> -->
+<view wx:for="{{datatype}}" wx:key="{{index}}" data-index="{{index}}" class="{{index==currentTapIndex?'active':''}}" bindtap='tabTap'>{{item.type}}</view>
+</view>
+</view>
+<view class='joke' wx:for="{{jokeData}}" wx:key="{{index}}">
+<text>{{item.content}}</text>
+</view>
+<image src="../../images/totop.png" class='totop' bindtap='totop' hidden='{{!floorstatus}}'></image>
